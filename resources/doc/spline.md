@@ -13,7 +13,7 @@ $data = new Data();
 $data->addPoints([], "Serie1")
 
 // Create the image and set the data
-$image = $factory->newImage(700, 230, $data);
+$image = new Image(700, 230, $data);
 $image->setShadow(true, ["X" => 1, "Y" => 1, "R" => 0, "G" => 0, "B" => 0, "Alpha" => 20]);
 
 // 1st spline drawn in white with control points visible
